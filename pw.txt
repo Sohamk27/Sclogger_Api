@@ -1,0 +1,3 @@
+password: WGdDFOOm0npVwMZM
+
+secret url: mongodb+srv://sohamk:<password>@atlascluster.rqaodpe.mongodb.net/?retryWrites=true&w=majority
