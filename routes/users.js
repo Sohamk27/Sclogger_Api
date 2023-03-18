@@ -4,7 +4,7 @@ const Post = require('../models/Post');
 const bcrypt = require('bcrypt');
 
 
-// UPDATE USER
+// UPDATE USER 
 router.put('/:id', async (req, res) => {
     if(req.body.userId === req.params.id) {
         if(req.body.password) {
@@ -57,8 +57,6 @@ router.get('/:id', async (req, res) => {
         res.status(500).json(err)
     }
 });
-
-
 
 
 

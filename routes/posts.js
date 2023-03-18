@@ -4,7 +4,7 @@ const Post = require('../models/Post');
 
 
 // CREATE NEW POST
-router.podt('/', async (req, res) => {
+router.post('/', async (req, res) => {
     const newPost = new Post(req.body);
     try{
         const savedPost = await newPost.save();

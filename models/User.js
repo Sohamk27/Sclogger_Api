@@ -23,3 +23,4 @@ const UserSchema = new mongoose.Schema({
 );
 
 module.exports = mongoose.model("User", UserSchema);
+// Model name is User and the schema is UserSchema. The model is exported and used in the routes.
