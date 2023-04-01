@@ -8,6 +8,7 @@ const postRoute = require('./routes/posts');
 const categoryRoute = require('./routes/categories');
 const multer = require('multer');
 const cors = require('cors');
+const path = require('path');
 
 // cors('*');
 
@@ -17,6 +18,7 @@ const cors = require('cors');
 
 // middleware
 app.use(express.json(), cors());
+app.use("/Images", express.static(path.join(__dirname, "/Images")));
 
 mongoose.connect("mongodb://localhost:27017/Users", {
     useNewUrlParser: true, 
